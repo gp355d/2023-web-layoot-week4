@@ -42,16 +42,16 @@
 .classic-list {
   margin-right: -12px;
   margin-left: -12px;
-}
-.classic-list li {
-  width: 33.33%;
-  padding-right: 12px;
-  padding-left: 12px;
-  @include pad(){
-    width: 100%;
-  }
-  img {
-    height: 416px;
+  li {
+    width: 33.33%;
+    padding-right: 12px;
+    padding-left: 12px;
+    @include pad(){
+      width: 100%;
+    }
+    img {
+      height: 416px;
+    }
   }
 }
 /* 聯名設計區塊 */
@@ -59,12 +59,12 @@
   background-image: url(../images/index-bg.png);
   background-repeat: no-repeat;
   background-size: cover;
-}
-.signature h2 {
-  font-size: 3rem;
-  color: $text-color;
-  @include mobile(){
-    margin-bottom: 24px;
+  h2 {
+    font-size: 3rem;
+    color: $text-color;
+    @include mobile(){
+      margin-bottom: 24px;
+    }
   }
 }
 .signature-list {
@@ -103,4 +103,46 @@
     background-color: $bg-color3;
   }
 }
-
+/*顧客推薦區塊*/
+.recommender h2{
+  font-size: 3rem;
+  color: $title-color;
+  @include mobile(){
+    font-size: 1.5rem;
+  }
+}
+.recommender-list{
+  margin-right: -12px;
+  margin-left: -12px;
+  li{
+    width: 25%;
+    padding-right: 12px;
+    padding-left: 12px;
+    @include pad(){
+      width: 50%;
+    }
+    @include mobile(){
+      width: 100%;
+    }
+  }
+}
+.recommender-list-card-content{
+  /* border-left: 1px solid #DEE2E6;
+  border-right: 1px solid #DEE2E6;
+  border-bottom: 1px solid #DEE2E6; */
+  box-shadow: 2px 0px 6px 2px rgba(0, 0, 0, 0.16);
+  padding: 16px;
+  h3{
+    margin-bottom: 8px;
+  }
+  p{
+    height: 72px;
+    @include pad(){
+      margin-bottom: 72px;
+    }
+  }
+  span{
+    font-size: 0.875rem;
+    color: #707070;
+  }
+}

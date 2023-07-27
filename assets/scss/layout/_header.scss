@@ -1,22 +1,12 @@
 header {
   align-items: center;
-  padding-top: 16px;
   padding-bottom: 15.43px;
-  @include mobile() {
-    padding-bottom: 0;
-  }
   & h1 {
     @include mobile() {
       padding-left: 15px;
       padding-bottom: 15.43px;
       align-self: flex-start;
     }
-  }
-}
-@include mobile(){
-  header.container{
-    padding-left: 0;
-    padding-right: 0;
   }
 }
 .bg-color {
