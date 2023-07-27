@@ -1,3 +1,48 @@
+/* banner區塊 */
+.banner-bg{
+  background-image: url(../images/home-header.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 787px;
+  @include mobile(){
+    background-image: url(../images/home-header-sm.png);
+    height: 396px;
+
+  }
+}
+.slogan-title{
+  font-size: 2.25rem;
+  color: $title-color;
+  @include mobile(){
+    font-size: 1rem;
+  }
+}
+.slogan{
+  font-size: 4rem;
+  color: #650300;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+@media(max-width:767px){
+  .slogan{
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+  }
+}
+.banner-content{
+  justify-content: center;
+  text-align: right;
+}
+.buy-btn{
+  font-size: 1.25rem;
+  background-color: $bg-color;
+  width: 104px;
+  margin-left: auto;
+  color: $text-color;
+  padding: 6px 0;
+
+}
 /* 專業介紹區塊 */
 .bg-color2 {
   background-color: $bg-color2;
