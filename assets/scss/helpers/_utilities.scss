@@ -12,5 +12,36 @@
 @media(max-width:767px) {
   .container {
     max-width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+.d-block{
+  display: block;
+}
+.d-flex{
+  display: flex;
+}
+.justify-content-between{
+  justify-content: space-between;
+}
+.flex-wrap{
+  flex-wrap: wrap;
+}
+.mr-0{
+  margin-right: 0;
+}
+.mr-8{
+  margin-right: $margin-spacer* 8;
+}
+@include mobile{
+  .d-sm-flex{
+    display: flex;
+  }
+  .flex-sm-column{
+    flex-direction: column;
+  }
+  .text-sm-center{
+    text-align: center;
   }
 }
