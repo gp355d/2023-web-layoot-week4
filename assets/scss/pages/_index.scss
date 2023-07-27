@@ -54,4 +54,53 @@
     height: 416px;
   }
 }
+/* 聯名設計區塊 */
+.signature {
+  background-image: url(../images/index-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.signature h2 {
+  font-size: 3rem;
+  color: $text-color;
+  @include mobile(){
+    margin-bottom: 24px;
+  }
+}
+.signature-list {
+  color: $text-color2;
+  font-size: 3rem;
+  font-style: italic;
+}
+.blackpeople{
+  background-image: url(../images/home-section4-1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 240px;
+  @include mobile(){
+    background-image: url(../images/home-section4-1-sm.png);
+
+  }
+}
+.glasses{
+  background-image: url(../images/home-section4-2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 240px;
+  @include mobile(){
+    background-image: url(../images/home-section4-2-sm.png);
+  }
+}
+.signature-list li {
+  width: 50%;
+  @include pad(){
+    width: 100%;
+    margin-bottom: 24px;
+  }
+  p {
+    background-color: $bg-color3;
+  }
+}
 
