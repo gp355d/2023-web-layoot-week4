@@ -31,3 +31,27 @@
    text-align: left;
   }
 }
+/* 經典系列區塊 */
+.classic {
+  font-size: 3rem;
+  color: $title-color;
+  @include mobile(){
+    font-size: 1.5rem;
+  }
+}
+.classic-list {
+  margin-right: -12px;
+  margin-left: -12px;
+}
+.classic-list li {
+  width: 33.33%;
+  padding-right: 12px;
+  padding-left: 12px;
+  @include pad(){
+    width: 100%;
+  }
+  img {
+    height: 416px;
+  }
+}
+
