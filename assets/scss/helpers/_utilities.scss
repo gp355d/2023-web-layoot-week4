@@ -12,8 +12,6 @@
 @media(max-width:767px) {
   .container {
     max-width: 100%;
-    padding-left: 0;
-    padding-right: 0;
   }
 }
 .d-block{
@@ -28,7 +26,12 @@
 .flex-wrap{
   flex-wrap: wrap;
 }
-
+.text-center{
+  text-align: center;
+}
+.font-bold{
+  font-weight: bold;
+}
 @include mobile{
   .d-sm-block{
     display: block;

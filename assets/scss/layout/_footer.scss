@@ -1,56 +1,27 @@
 .footer-content {
-  // padding-bottom: 32px;
-  // padding-top: 48px;
   border-bottom: 1px solid $text-color;
-
-  @include mobile() {
-    // padding-top: 24px;
-    // padding-bottom: 24px;
-    // margin-bottom: 16px;
-  }
 }
 
 .sub-menu {
-  // display: flex;
-  // margin-bottom: 24px;
-
   @include mobile() {
     display: none;
   }
 }
 
 .sub-menu li {
-  // margin-right: 48px;
-
-  &:last-child {
-    // margin-right: 0;
-  }
-
   a {
     display: block;
     padding: 12px 0;
     color: #fff;
-
-    @include pad() {
-      // padding: 8px 0;
-    }
   }
 }
 
 .contactus {
   li {
     span {
-      // margin-right: 16px;
-
       @include mobile() {
         margin-right: 10px;
       }
-    }
-
-    // margin-bottom: 8px;
-
-    & li:last-child {
-      // margin-bottom: 0;
     }
   }
 
@@ -88,15 +59,6 @@
 
 .socialicon {
   display: flex;
-
-  li {
-    // margin-right: 32px;
-
-    @include pad() {
-      // margin-right: 16px;
-    }
-  }
-
   img {
     width: 48px;
     height: 48px;
@@ -117,29 +79,19 @@
 .footer-bottom {
   align-items: center;
   color: $text-color;
-  @include mobile(){
-    // padding-bottom: 24px;
-  }
   p{
     font-size: 0.875rem;
     @include mobile(){
-      // margin-bottom: 8px;
     }
   }
 }
 .privacy {
   display: flex;
-  // padding: 32px 0;
   @include mobile(){
     display: block;
     padding: 0;
   }
   li{
-    // margin-right: 48px;
-    @include mobile(){
-      // margin-right: 0;
-      // margin-bottom: 8px;
-    }
     a {
       color: $text-color;
       font-size: 0.875rem;

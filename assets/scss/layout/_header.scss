@@ -13,6 +13,12 @@ header {
     }
   }
 }
+@include mobile(){
+  header.container{
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
 .bg-color {
   background-color: $bg-color;
 }
