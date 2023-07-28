@@ -87,7 +87,7 @@
       <h2 class="mb-6 mb-sm-3 text-center font-bold">顧客推薦</h2>
       <ul class="recommender-list d-flex flex-wrap">
         <li class="d-flex flex-column mb-md-3 mb-sm-2">
-          <img src="../assets/images/home-section5-1.png" alt="recommender-people1">
+          <img class="recommender-photo" src="../assets/images/home-section5-1.png" alt="recommender-people1">
           <div class="recommender-list-card">
             <div class="recommender-list-card-content">
               <h3 class="mb-1">Jessy</h3>
@@ -98,7 +98,7 @@
         </li>
         <li class="d-flex flex-column mb-md-3 mb-sm-2">
           <div class="recommender-list-card">
-            <img src="../assets/images/home-section5-2.png" alt="recommender-people1">
+            <img class="recommender-photo" src="../assets/images/home-section5-2.png" alt="recommender-people1">
             <div class="recommender-list-card-content">
               <h3 class="mb-1">凱倫</h3>
               <p class="mb-6">做工細緻、鏡架很輕盈，待久也不會覺得有負擔，推薦給大家！</p>
@@ -108,7 +108,7 @@
         </li>
         <li class="d-flex flex-column mb-md-0 mb-sm-2">
           <div class="recommender-list-card">
-            <img src="../assets/images/home-section5-3.png" alt="recommender-people1">
+            <img class="recommender-photo" src="../assets/images/home-section5-3.png" alt="recommender-people1">
             <div class="recommender-list-card-content">
               <h3 class="mb-1">悠悠</h3>
               <p class="mb-6">謝謝客服人員的詳細回答，成功買到了喜歡的眼鏡，下次會再回購！</p>
@@ -118,7 +118,7 @@
         </li>
         <li class="d-flex flex-column mb-md-0 mb-sm-0">
           <div class="recommender-list-card d-flex flex-column">
-            <img src="../assets/images/home-section5-4.png" alt="recommender-people1">
+            <img class="recommender-photo" src="../assets/images/home-section5-4.png" alt="recommender-people1">
             <div class="recommender-list-card-content">
               <h3 class="mb-1">Kyuan</h3>
               <p class="mb-6">服務很好，品質沒有任何問題，非常喜歡。</p>
@@ -127,6 +127,37 @@
           </div>
         </li>
       </ul>
+    </div>
+    <div class="bg-color2">
+      <div class="connect container pt-10 pb-10 pt-sm-5 pb-sm-5">
+        <div class="connect-content">
+          <h2 class="mb-6 mb-md-3 text-center font-bold ">聯絡我們</h2>
+          <p class="mb-3">我們相當重視您的意見，若您有任何疑問，可先參考「常見問題」，若仍有任何問題，請填妥以下資料，我們會在近期與您聯繫。</p>
+          <form class="form" action="">
+            <div class="mb-2">
+              <label class="mb-1 d-block" for="name">姓名</label>
+              <input class="input-style" type="text" id="name" placeholder="陳小明">
+            </div>
+            <div class="mb-2">
+              <label class="mb-1 d-block" for="phone">姓名</label>
+              <input class="input-style" type="tel" id="phone" placeholder="0912-345-678">
+            </div>
+            <div class="mb-2">
+              <label class="mb-1 d-block" for="email">電子郵件</label>
+              <input class="input-style" type="email" id="email" placeholder="example@email.com">
+            </div>
+            <div class="mb-2">
+              <label class="mb-1 d-block" for="message">意見反應</label>
+              <textarea class="textarea" id="message" placeholder="請輸入您的意見"></textarea>
+            </div>
+            <div class="privicy-info d-flex mb-6">
+              <input class="form-check" type="checkbox" id="form-check">
+              <label for="form-check">我同意隱私權政策，並同意依隱私權政策中所述的方式處理自己的資料。</label>
+            </div>
+            <a class="send pt-2 pb-2 text-center" href="#">確認送出</a>
+          </form>
+        </div>
+      </div>
     </div>
     <%- include('./layout/footer'); -%>
 
