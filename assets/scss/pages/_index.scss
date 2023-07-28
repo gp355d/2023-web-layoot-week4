@@ -1,40 +1,47 @@
 /* banner區塊 */
-.banner-bg{
+.banner-bg {
   background-image: url(../images/home-header.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
   height: 787px;
-  @include mobile(){
+
+  @include mobile() {
     background-image: url(../images/home-header-sm.png);
     height: 396px;
 
   }
 }
-.slogan-title{
+
+.slogan-title {
   font-size: 2.25rem;
   color: $title-color;
-  @include mobile(){
+
+  @include mobile() {
     font-size: 1rem;
   }
 }
-.slogan{
+
+.slogan {
   font-size: 4rem;
   color: #650300;
   font-weight: bold;
   margin-bottom: 4px;
 }
-@media(max-width:767px){
-  .slogan{
+
+@media(max-width:767px) {
+  .slogan {
     font-size: 1.5rem;
     margin-bottom: 8px;
   }
 }
-.banner-content{
+
+.banner-content {
   justify-content: center;
   text-align: right;
 }
-.buy-btn{
+
+.buy-btn {
   font-size: 1.25rem;
   background-color: $bg-color;
   width: 104px;
@@ -43,212 +50,279 @@
   padding: 6px 0;
 
 }
+
 /* 專業介紹區塊 */
 .bg-color2 {
   background-color: $bg-color2;
 }
+
 .professional h2 {
   font-size: 3rem;
   color: $title-color;
-  @include mobile(){
+
+  @include mobile() {
     font-size: 1.5rem;
   }
 }
+
 .professional-list {
   margin-right: -12px;
   margin-left: -12px;
-  li{
+
+  li {
     width: 25%;
     padding-right: 12px;
     padding-left: 12px;
-    @include pad(){
+
+    @include pad() {
       width: 50%;
     }
-    @include mobile(){
+
+    @include mobile() {
       width: 100%;
     }
   }
+
   h3 {
     font-size: 1.5rem;
     color: $title-color;
   }
+
   p {
-   text-align: left;
+    text-align: left;
   }
 }
+
 /* 經典系列區塊 */
 .classic {
   font-size: 3rem;
   color: $title-color;
-  @include mobile(){
+
+  @include mobile() {
     font-size: 1.5rem;
   }
 }
+
 .classic-list {
   margin-right: -12px;
   margin-left: -12px;
+
   li {
     width: 33.33%;
     padding-right: 12px;
     padding-left: 12px;
-    @include pad(){
+
+    @include pad() {
       width: 100%;
     }
+
     img {
       height: 416px;
     }
   }
 }
+
 /* 聯名設計區塊 */
 .signature {
   background-image: url(../images/index-bg.png);
   background-repeat: no-repeat;
   background-size: cover;
+
   h2 {
     font-size: 3rem;
     color: $text-color;
-    @include mobile(){
+
+    @include mobile() {
       margin-bottom: 24px;
     }
   }
 }
+
 .signature-list {
   color: $text-color2;
   font-size: 3rem;
   font-style: italic;
 }
-.blackpeople{
+
+.blackpeople {
   background-image: url(../images/home-section4-1.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
   height: 240px;
-  @include mobile(){
+
+  @include mobile() {
     background-image: url(../images/home-section4-1-sm.png);
 
   }
 }
-.glasses{
+
+.glasses {
   background-image: url(../images/home-section4-2.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
   height: 240px;
-  @include mobile(){
+
+  @include mobile() {
     background-image: url(../images/home-section4-2-sm.png);
   }
 }
+
 .signature-list li {
   width: 50%;
-  @include pad(){
+
+  @include pad() {
     width: 100%;
     margin-bottom: 24px;
   }
+
   p {
     background-color: $bg-color3;
   }
 }
+
 /*顧客推薦區塊*/
-.recommender h2{
+.recommender h2 {
   font-size: 3rem;
   color: $title-color;
-  @include mobile(){
+
+  @include mobile() {
     font-size: 1.5rem;
   }
 }
-.recommender-list{
+
+.recommender-list {
   margin-right: -12px;
   margin-left: -12px;
-  li{
+
+  li {
     width: 25%;
     padding-right: 12px;
     padding-left: 12px;
-    @include pad(){
+
+    @include pad() {
       width: 50%;
     }
-    @include mobile(){
+
+    @include mobile() {
       width: 100%;
     }
   }
 }
-.recommender-photo{
+
+.recommender-photo {
+  width: 306px;
   height: 306px;
+  @include pad(){
+    width: 100%;
+  }
 }
-.recommender-list-card-content{
+
+.recommender-list-card-content {
   /* border-left: 1px solid #DEE2E6;
   border-right: 1px solid #DEE2E6;
   border-bottom: 1px solid #DEE2E6; */
   box-shadow: 2px 0px 6px 2px rgba(0, 0, 0, 0.16);
   padding: 16px;
-  h3{
+
+  h3 {
     margin-bottom: 8px;
   }
-  p{
+
+  p {
     height: 72px;
-    @include pad(){
+
+    @include pad() {
       margin-bottom: 72px;
     }
   }
-  span{
+
+  span {
     font-size: 0.875rem;
     color: #707070;
   }
 }
+
 /* 聯絡我們區塊 */
-.connect-content{
+.connect-content {
   max-width: 50%;
   margin: 0 auto;
-  @include pad(){
+
+  @include pad() {
     max-width: 83.33%;
   }
-  @include mobile(){
+
+  @include mobile() {
     max-width: 100%;
   }
 }
-.connect-content 
-  h2{
+
+.connect-content {
+  h2 {
     font-size: 3rem;
     color: $title-color;
-    @include mobile(){
+
+    @include mobile() {
       font-size: 1.5rem;
     }
-  p{
+  }
+
+  p {
     font-size: 1.25rem;
-    @include pad(){
+
+    @include pad() {
       font-size: 1rem;
     }
   }
 }
-::placeholder{
+
+::placeholder {
   color: rgba(0, 0, 0, .2);
 }
-.input-style{
+
+.input-style {
   width: 100%;
   padding: 6px 0;
   padding-left: 12px;
   font-size: 1rem;
-  border:1px solid#000;
+  border: 1px solid#000;
 }
-.textarea{
+
+.textarea {
   width: 100%;
   height: 136px;
   padding-left: 12px;
   padding-top: 6px;
   border: 1px solid #000;
 }
-.privicy-info{
+
+.privicy-info {
   align-items: start;
 }
-.form-check{
+
+.form-check {
   width: 20px;
   height: 20px;
-  // background-color: #000;
   margin: 4px 4px 0 0;
 }
-.send{
+
+.send {
   max-width: 416px;
   margin: 0 auto;
   font-size: 1rem;
   background-color: $bg-color;
   color: $text-color;
+  @include pad(){
+    max-width: 336px;
+  }
+  @include mobile(){
+    max-width: 100%;
+  }
+  &:hover{
+    background-color: $bg-color4;
+  }
+  &:active{
+    background-color: $bg-color4;
+  }
 }
