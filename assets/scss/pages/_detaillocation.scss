@@ -1,0 +1,41 @@
+.store-single-list{
+  width: 41.67%;
+  @include pad(){
+    width: 100%;
+    flex-wrap: nowrap;
+  }
+  @include mobile(){
+    flex-wrap: wrap;
+  }
+  img{
+    @include pad(){
+      width: 50%;
+      @include mobile(){
+        width: 100%;
+      }
+    }
+  }
+
+}
+.store-single li{
+  width: 100%;
+}
+.store-single{
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+  li{
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+.map{
+  width: 53.33%;
+  background-image: url(../images/storemap.png);
+  background-size: cover;
+  background-position: center center;
+  height: 414px;
+  @include pad(){
+    width: 100%;
+  }
+}
