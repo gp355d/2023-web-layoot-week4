@@ -1,0 +1,85 @@
+.location{
+  h2{
+    font-size: 3rem;
+    border-left: 8px solid $text-color2;
+    padding-left: 12px;
+    @include mobile(){
+      font-size: 1.5rem;
+    }
+  }
+  label{
+    font-size: 1.5rem;
+    @include mobile(){
+      font-size: 1rem;
+    }
+  }
+  select{
+    color: #495057;
+    font-size: 1.125rem;
+    line-height: 1.44;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    width: 60%;
+    border: 2px solid #CED4DA;
+  }
+}
+.selectarea{
+  width: 32.1%;
+  justify-content: space-between;
+  align-items: center;
+  @include pad(){
+    width: 59.6%;
+  }
+  @include mobile(){
+    width: 100%;
+  }
+}
+.store-list{
+  margin-right: -12px;
+  margin-left: -12px;
+  li{
+    width: 33.33%;
+    color: $text-color3;
+    padding-right: 12px;
+    padding-left: 12px;
+    @include pad(){
+      width: 50%;
+    }
+    @include mobile(){
+      width: 100%;
+    }
+  }
+  h3{
+    font-size: 1.5rem;
+    color: $text-color3;
+    border: 1px solid #00000020;
+  }
+  // img{
+  //   height: 224px;
+  // }
+}
+.store-info{
+  border: 1px solid #00000020;
+  li{
+    width: 100%;
+    padding-right: 0;
+    padding-left: 0;
+  }
+  span{
+    font-size: 1.5rem;
+  }
+  p{
+    font-size: 1.25rem;
+  }
+}
+.moreinfo{
+  font-size: 1.1875rem;
+  color: $text-color3;
+  &:hover{
+    opacity: .6;
+  }
+}
+.detail{
+  background-color: #000;
+  color: $text-color;
+}

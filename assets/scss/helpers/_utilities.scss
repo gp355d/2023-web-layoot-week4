@@ -81,6 +81,8 @@ $spacer-types: (
   // 80px
   11: $spacer * 11,
   // 88px
+  12: $spacer * 12,
+  // 96px
 ) !default;
 @each $name, $spacer in $spacer-types {
   .m-#{$name} {
