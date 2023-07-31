@@ -1,0 +1,116 @@
+.blog-content{
+  h2{
+    font-size: 3rem;
+    @include mobile(){
+      font-size: 1.5rem;
+    }
+  }
+}
+.blog-list{
+  li{
+    margin-bottom: 60px;
+    &:last-child{
+      margin-bottom: 0;
+    }
+    @include pad(){
+      margin-bottom: 24px;
+    }
+  }
+  h2{
+    font-size: 2rem;
+    color: $title-color;
+    @include pad(){
+      font-size: 1.5rem;
+    }
+  }
+  img{
+    width: 50%;
+    @include mobile(){
+      width: 100%;
+    }
+  }
+}
+
+.blog-list-description{
+  justify-content: space-between;
+  align-items: flex-end;
+  .contents{
+    @include mobile(){
+      width: 100%;
+    }
+    p{
+      @include mobile(){
+        display: none;
+      }
+    }
+  }
+  @include mobile(){
+    width: 100%;
+    align-items: flex-start;
+  }
+  p{
+    font-size: 1.25rem;
+    @include pad(){
+      font-size: 1rem;
+    }
+  }
+  a.show{
+    font-size: 2.25rem;
+    color: $title-color;
+    font-family: 'Roboto';
+    @include pad(){
+      font-size: 1rem;
+      display: none;
+    }
+    @include mobile(){
+      display: none;
+    }
+  }
+}
+.blog-list-description{
+  .hide-link{
+    display: none;
+    @include pad(){
+      display: inline;
+      color: #000;
+    }
+  }
+  .hide-info{
+    @include pad(){
+      display: none;
+    }
+  }
+  .hide-info2{
+    @include pad(){
+      display: none;
+    }
+  }
+  .hide-info3{
+    display: none;
+    @include pad(){
+      display: block;
+    }
+  }
+}
+// a.show{
+//   @include pad(){
+//     display: none;
+//   }
+// }
+.blog-list-info{
+  margin-bottom: 16px;
+  @include pad(){
+    margin-bottom: 4px;
+  }
+  @include mobile(){
+    margin-bottom: 0;
+  }
+  span:first-child{
+    font-size: 1.25rem;
+    font-family: 'Roboto';
+    @include pad(){
+      font-size: 1rem;
+    }
+  }
+
+}
