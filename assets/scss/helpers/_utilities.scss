@@ -38,6 +38,9 @@
 .h-100{
   height: 100%;
 }
+.title-style{
+  border-left: 8px solid $text-color2;
+}
 @include mobile{
   .d-sm-block{
     display: block;

@@ -1,7 +1,6 @@
 .location{
   h2{
     font-size: 3rem;
-    border-left: 8px solid $text-color2;
     padding-left: 12px;
     @include mobile(){
       font-size: 1.5rem;
