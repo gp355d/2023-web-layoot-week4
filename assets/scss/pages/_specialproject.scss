@@ -68,6 +68,7 @@
 }
 .special-content-text{
   width:66.7%;
+  color: #555555;
   @include pad(){
     width: 75%;
   }
@@ -99,6 +100,9 @@
 }
 .hashtags{
   color: $text-color2;
+  a{
+    color: $text-color2;
+  }
   @include pad(){
     width: 25%;
   }
