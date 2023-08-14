@@ -34,6 +34,7 @@
 .blog-list-description{
   justify-content: space-between;
   align-items: flex-end;
+  width: 50%;
   .contents{
     @include mobile(){
       width: 100%;
@@ -73,6 +74,8 @@
     @include pad(){
       display: inline;
       color: #000;
+      text-transform: lowercase;
+      font-weight: 400;
     }
   }
   .hide-info{
