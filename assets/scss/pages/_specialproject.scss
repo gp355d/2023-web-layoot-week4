@@ -77,13 +77,14 @@
   }
   h2{
     font-size: 3rem;
+    color: #000;
     @include mobile(){
       font-size: 1.5rem;
     }
   }
   h3{
     font-size: 1.5rem;
-    font-family: 'Roboto';
+    color: #000;
     @include mobile(){
       font-size: 1rem;
       font-weight: 500;
@@ -93,7 +94,6 @@
 .hashtag{
   color: $text-color2;
   font-size: 1.5rem;
-  font-family: 'Roboto';
   @include mobile(){
     font-size: 1rem;
   }
